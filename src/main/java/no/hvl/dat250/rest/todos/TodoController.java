@@ -31,7 +31,7 @@ public class TodoController {
         return newTodo;
       }
     }
-    return null;
+    return todoNotFound(id);
   }
 
   @GetMapping("/todos/{id}")
